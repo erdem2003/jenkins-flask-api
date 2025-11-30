@@ -23,5 +23,9 @@ def ok():
 def new():
     return {"msg": "Bu endpoint CI/CD ile otomatik deploy oldu!"}
 
+@app.route("/new2")
+def new2():
+    return {"msg": "Bu endpoint CI/CD ile otomatik deploy oldu!"}
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
