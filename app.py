@@ -19,10 +19,9 @@ def ping():
 def ok():
     return jsonify({"message": "Auto deploy is REALLY working!"})
 
-@app.route("/ok2")
-def ok():
-    return jsonify({"message": "Auto deploy is REALLY working2!"})
-
+@app.route("/new")
+def new():
+    return {"msg": "Bu endpoint CI/CD ile otomatik deploy oldu!"}
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
